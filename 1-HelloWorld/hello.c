@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main() {
-  printf("Hello World!");
-
-  return 0;
+  // NOTE: printf doesn't automatically insert a newline char like in other stdout functions in other languages
+  printf("Hello World!\n");
 }
