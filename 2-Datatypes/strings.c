@@ -2,7 +2,9 @@
 
 int main() {
   // NOTE: a 'string' is an array of characters terminated by the null (\0) character
+  // NOTE: x and x2 are equivalent
   char x[64] = "Hey! this is a string!\n";
+  char x2[64] = {'H', 'e', 'y', '!', ' ', 't', 'h', 'i', 's', ' ', 'i', 's', ' ', 'a', ' ', 's', 't', 'r', 'i', 'n', 'g', '!', '\n'};
 
   printf("%s", x);
 

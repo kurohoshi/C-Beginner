@@ -22,7 +22,7 @@ int passByValue(int x) {
   printf("Pass by Value function, after change: %d\n", x);
 }
 
-int passByReference(int *x) {
+int passByReference(int *x) { // technically passing by value with the address the value is pointing to
   // use dereferenced value to use the value at the reference
   printf("Pass by Reference function, before change: %d\n", *x);
   *x = 25;

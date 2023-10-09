@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// usually typecast to a datatype with more info/precision to avoid losing information
 int main() {
   char x = 'f';
 
