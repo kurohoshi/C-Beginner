@@ -3,6 +3,8 @@
 #include <stdio.h>
 
 int main() {
+  int *i;
+
   printf("char:  %d\n",       sizeof(char));
   printf("short: %d\n",       sizeof(short));
   printf("size_t: %d\n",      sizeof(size_t));
@@ -12,6 +14,7 @@ int main() {
   printf("float: %d\n",       sizeof(float));
   printf("double: %d\n",      sizeof(double));
   printf("long double: %d\n", sizeof(long double));
+  printf("int *: %d\n",       sizeof(i));
 
   return 0;
 }
