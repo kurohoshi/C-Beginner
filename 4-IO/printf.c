@@ -21,6 +21,10 @@ int main() {
     printf("\n"); // or putchar()
   }
 
+  char mssg[] = "String with a %\n";
+  printf(mssg);       // the % character will be incoreectly read as a formatter rather than a literal
+  printf("%s", mssg); // the % character will be correctly shown
+
   return 0;
 }
 
