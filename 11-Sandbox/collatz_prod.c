@@ -20,14 +20,14 @@ int main() {
 
    storeAsInt(&usrNum);
 
-   prevNum = usrNum;
-   for(; usrNum != 1; ptr += sizeof(usrNum)) {
+   for(*(int *)ptr = usrNum, ptr += sizeof(usrNum); usrNum != 1; ptr += sizeof(usrNum)) {
       *(int *)ptr = usrNum = usrNum%2 ? 3*usrNum+1 : usrNum/2;
    }
 }
 
 void storeAsInt(int *usrNum) {
   int inputNum;
+  *usrNum = 0;
 
   printf("Enter a number: ");
 
